@@ -1,0 +1,146 @@
+.photo-daily__item {
+  width: 100%;
+
+  position: relative;
+}
+
+.photo-daily__item:before {
+  content: "";
+
+  position: absolute;
+
+  width: 142px;
+  height: 36px;
+
+  background: url("../img/panorama.png");
+}
+
+.photo-daily__comment {
+  padding: 22px 18px;
+
+  background-color: #f2f2f2;
+}
+
+.photo-daily__name {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: #283645;
+}
+
+.photo-daily__text {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #283645;
+}
+
+.photo-daily__like {
+  position: relative;
+
+  padding-left: 33px;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #d22856;
+}
+
+.photo-daily__like::before {
+  position: absolute;
+  content: "";
+
+  width: 14px;
+  height: 12px;
+
+  background: url("../img/icon-heart.png") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .photo-daily {
+    margin-bottom: 20px;
+  }
+
+  .photo-daily__item {
+    background: url("../img/panorama-mobile@1x.jpg") no-repeat 50% 50%;
+    height: 138px;
+  }
+
+  .photo-daily__like::before {
+    top: 5px;
+    left: 0;
+  }
+
+  .photo-daily__item:before {
+    top: 0;
+    left: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-daily {
+    margin-bottom: 50px;
+  }
+
+  .photo-daily__item {
+    height: 512px;
+
+    background: url("../img/panorama-tablet@1x.jpg") no-repeat 50% 50%;
+  }
+
+  .photo-daily__item:before {
+    top: 58px;
+    left: 545px;
+  }
+
+  .photo-daily__comment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo-daily__like {
+     order: 1;
+     padding-right: 50px;
+  }
+
+  .photo-daily__like::before {
+    top: 5px;
+    left: 150px;
+  }
+
+  .photo-daily__name {
+    order: 0;
+  }
+
+  .photo-daily__text {
+    order: 2;
+    width: 515px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-daily__item {
+    background: url("../img/panorama-desktop@1x.jpg") no-repeat 50% 50%;
+  }
+
+  .photo-daily__text {
+    order: 2;
+    width: 100%;
+  }
+
+  .photo-daily__item:before {
+    top: 58px;
+    left: 945px;
+  }
+}

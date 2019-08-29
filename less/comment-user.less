@@ -1,0 +1,60 @@
+.comment-user__border legend {
+  padding: 0 35px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+
+.comment-user__comment {
+  padding: 20px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.comment-user__border {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @mobile-width) {
+  .comment-user__border {
+    padding-top: 12px;
+  }
+
+  .comment-user__border {
+    border: none;
+  }
+
+  .comment-user__comment {
+    box-sizing: border-box;
+    width: 100%;
+    height: 202px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comment-user__border {
+    padding: 58px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .comment-user__comment {
+    height: 194px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment-user {
+    width: 100%;
+  }
+
+  .comment-user__border {
+    border: 2px solid #e5e5e5;
+  }
+
+  .comment-user__comment {
+    height: 216px;
+  }
+}

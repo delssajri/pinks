@@ -1,0 +1,141 @@
+.advance-blog__border {
+  padding: 0;
+}
+
+.advance-blog__border legend {
+  padding: 0 30px;
+
+  color: #d22856;
+}
+
+.advance-blog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advance-blog__label input[type="checkbox"] {
+  display: none;
+}
+
+.advance-blog__label {
+  position: relative;
+
+  padding-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+
+  cursor: pointer;
+}
+
+.check-indicator {
+  position: absolute;
+  left: 0;
+
+  content: "";
+
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.advance-blog__label input[type="checkbox"]:checked + .check-indicator {
+  background: #ffffff url("../img/tick.png") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .advance-blog {
+    padding: 40px 0 50px;
+
+    background-color: #f2f2f2;
+  }
+
+  .advance-blog__border {
+    border: none;
+  }
+
+  .advance-blog__border legend {
+    margin-bottom: 48px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .advance-blog__label {
+    margin-bottom: 58px;
+  }
+
+  .advance-blog__label:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advance-blog {
+    padding: 0;
+    margin-bottom: 58px;
+
+    background-color: #ffffff;
+  }
+
+  .advance-blog__border legend {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .advance-blog__border {
+    padding-left: 58px;
+    padding-bottom: 50px;
+
+    border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advance-blog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*salign-items: center;*/
+    justify-content: space-between;
+  }
+
+  .advance-blog__border {
+    padding: 0 58px;
+  }
+
+  .advance-blog__label {
+    margin-bottom: 66px;
+  }
+
+  .advance-blog__label:first-child {
+    order: 1;
+  }
+
+  .advance-blog__label:nth-child(3) {
+    order: 2;
+  }
+
+
+  .advance-blog__label:nth-child(5) {
+    order: 3;
+  }
+
+  .advance-blog__label:nth-child(2) {
+    order: 4;
+  }
+
+  .advance-blog__label:nth-child(4) {
+    order: 5;
+  }
+
+  .advance-blog__label:nth-child(6) {
+    order: 6;
+  }
+}

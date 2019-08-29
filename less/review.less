@@ -1,0 +1,173 @@
+.review {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.review__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.review__text {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.review__text::after {
+  display: none;
+
+  content: "";
+
+  width: 22px;
+  height: 42px;
+
+  position: absolute;
+  top: 23px;
+  left: -105px;
+
+  background: url("../img/left.png") no-repeat 50% 50%;
+}
+
+.review__text::before {
+  display: none;
+
+  content: "";
+
+  width: 22px;
+  height: 42px;
+
+  position: absolute;
+  top: 23px;
+  right: -105px;
+
+  background: url("../img/right.png") no-repeat 50% 50%;
+}
+
+.review__about {
+  display: none;
+
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.review::after {
+  display: none;
+
+  width: 22px;
+  height: 42px;
+
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  right: 50%;
+  margin-top: -32px;
+  margin-left: -40px;
+
+  width: 80px;
+  height: 65px;
+
+  background: url("../img/quotes.png") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .review {
+    padding: 46px 0 42px;
+  }
+  .review__title {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__text {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    padding: 100px 0 40px;
+  }
+
+  .review__title {
+    order: 1;
+
+    margin-top: 40px;
+    margin-bottom: 14px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .review__text {
+    order: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__about {
+    display: block;
+
+    order: 2;
+
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    padding: 188px 0 42px;
+  }
+
+  .review__title {
+    margin-top: 40px;
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review__text {
+    width: 676px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__about {
+    display: block;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review::after {
+    display: block;
+  }
+
+  .review__text::after,
+  .review__text::before {
+    display: block;
+  }
+}

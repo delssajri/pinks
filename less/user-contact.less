@@ -1,0 +1,156 @@
+.user-contact {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.user-contact__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-contact legend {
+  padding-left: 32px;
+  padding-right: 32px;
+
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.user-contact__label {
+  font-size: 14px;
+  line-height: 30px;
+
+  color: #d22856;
+}
+
+.user-contact__input {
+  box-sizing: border-box;
+
+  height: 62px;
+  padding: 15px 0 15px 22px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+@media (min-width: @mobile-width) {
+  .user-contact__item {
+    margin-bottom: 40px;
+  }
+
+  .user-contact legend {
+    font-size: 0;
+  }
+
+  .user-contact__input {
+    width: 280px;
+  }
+
+  .user-contact__label {
+    padding-left: 22px;
+  }
+
+    .user-contact__item {
+    margin-bottom: 18px;
+  }
+
+  .user-contact__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-contact__item {
+    margin-bottom: 58px;
+  }
+
+  .user-contact legend {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .user-contact__label {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+  }
+
+  .user-contact__label span {
+    order: 2;
+    padding-top: 8px;
+    padding-left: 20px;
+  }
+
+  .user-contact__list {
+    padding: 32px 45px 26px;
+  }
+
+  .user-contact {
+    width: 504px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .user-contact__input {
+    box-sizing: border-box;
+    width: 502px;
+  }
+
+  .icon--phone::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 62px;
+    height: 62px;
+
+    background: #e5e5e5 url("../img/icon--phone.png") no-repeat 50% 50%;
+  }
+
+  .icon--mail::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 62px;
+    height: 62px;
+
+    background: #e5e5e5 url("../img/icon--mail.png") no-repeat 50% 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contact {
+    width: 100%;
+  }
+
+  .user-contact__list {
+    padding: 42px 55px 20px;
+  }
+
+  .user-contact__label {
+    padding-left: 0;
+  }
+
+  .user-contact__input {
+    width: 375px;
+  }
+
+  .user-contact__list {
+    vertical-align: top;
+  }
+
+  .user-contact__item {
+    display: inline-block;
+  }
+
+  .user-contact__item:first-child {
+    margin-right: 70px;
+  }
+}

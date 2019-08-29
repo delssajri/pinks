@@ -1,0 +1,23 @@
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @mobile-width) {
+  .page-footer__wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    padding: 52px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    padding: 73px 0 87px;
+  }
+}

@@ -1,0 +1,32 @@
+.page-footer__wrapper {
+  display: block;
+}
+
+.icon-footer--desktop {
+    display: none;
+  }
+
+@media (min-width: @mobile-width) {
+  .photo-footer__wrapper {
+    padding: 60px 0 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 52px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-footer__wrapper {
+    padding: 73px 0 87px;
+  }
+
+  .icon-footer--desktop {
+    display: block;
+  }
+}

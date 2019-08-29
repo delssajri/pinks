@@ -1,0 +1,60 @@
+.social-blog {
+  padding-top: 5px;
+}
+
+.social-blog__list {
+  margin: 0;
+  padding: 0;
+
+  vertical-align: top;
+
+  font-size: 0;
+}
+
+.social-blog__item {
+  display: inline-block;
+
+  margin-right: 11px;
+}
+
+.social-blog__item:last-child {
+  margin-right: 0;
+}
+
+.social-blog__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  border: 2px solid #d2d4d6;
+}
+
+.link--tw {
+  background: url("../img/tw.png") no-repeat 50% 50%;
+}
+
+.link--fb {
+  background: url("../img/fb.png") no-repeat 50% 50%;
+}
+
+.link--yt {
+  background: url("../img/yt.png") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .social-blog {
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .social-blog {
+    // width: 180px;
+
+    text-align: none;
+  }
+}

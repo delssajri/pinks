@@ -1,0 +1,74 @@
+@mobile-width: 320px;
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+body {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #696766;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: @mobile-width) {
+  .container {
+    width: 280px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 940px;
+    padding: 0 130px;
+  }
+}

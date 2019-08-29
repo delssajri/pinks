@@ -1,0 +1,49 @@
+.link-footer {
+  position: relative;
+}
+
+.link-footer__text::before {
+  content: "";
+  position: absolute;
+
+  width: 27px;
+  height: 34px;
+
+  background: url("../img/htmlac.png") no-repeat 50% 50%;
+}
+
+.link-footer a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+
+  text-decoration: none;
+}
+
+@media (min-width: @mobile-width) {
+  .link-footer {
+    width: 130px;
+
+    margin: 0 auto;
+  }
+
+  .link-footer__text::before {
+    top: 0px;
+    left: 102px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .link-footer {
+    width: 130px;
+    padding-top: 15px;
+    margin: 0;
+
+    text-align: none;
+  }
+
+  .link-footer__text::before {
+    top: 13px;
+    left: 102px;
+  }
+}

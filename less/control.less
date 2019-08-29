@@ -1,0 +1,74 @@
+.control {
+  width: 70px;
+  height: 20px;
+
+  margin: 0 auto;
+}
+
+.control__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.control__item {
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  margin-right: 0px;
+
+  vertical-align: top;
+}
+
+.control__item:last-child {
+  margin-right: 0;
+}
+
+.control__label {
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.control__label input[type="radio"] {
+  display: none;
+}
+
+.control__label input[type="radio"] + .control__check-symbol {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background-color: #d2d4d6;
+}
+
+.control__label input[type="radio"]:checked + .control__check-symbol {
+  top: 0px;
+  left: 0px;
+
+  width: 5px;
+  height: 5px;
+
+  background-color: #ffffff;
+  border: 4px solid #283645;
+}
+
+@media (min-width: @mobile-width) {
+  .control {
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .control {
+    /*display: none;*/
+
+    /*margin-top: 34px;*/
+  }
+}

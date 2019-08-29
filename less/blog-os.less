@@ -1,0 +1,67 @@
+.blog-os {
+  width: 208px;
+  /*margin: 0 auto;*/
+
+  /*vertical-align: top;
+  text-align: center;*/
+
+  font-size: 0;
+}
+
+.blog-os__link {
+  display: inline-block;
+
+  margin-right: 32px;
+  background-color: red;
+}
+
+.blog-os__link:last-child {
+  margin-right: 0;
+}
+
+.i-os {
+  width: 48px;
+  height: 57px;
+
+  background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+}
+
+.android-os {
+  width: 43px;
+  height: 57px;
+
+  background: url("../img/logo-android.svg") no-repeat 50% 50%;
+}
+
+.microsoft-os {
+  width: 46px;
+  height: 57px;
+
+  background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .blog-os {
+    margin: 40px auto 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .blog-os {
+    margin: 46px auto 37px;
+  }
+
+  .android-os {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .blog-os {
+    margin: 67px auto 55px;
+  }
+
+  .android-os {
+    opacity: 1;
+  }
+}

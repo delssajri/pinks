@@ -1,0 +1,116 @@
+.description-effect {
+  display: none;
+  position: relative;
+}
+
+.description-effect__title {
+  margin-top: 95px;
+  margin-bottom: 24px;
+
+  font-size: 30px;
+  line-height: auto;
+  font-weight: bold;
+
+  color: #000000;
+}
+
+.description-effect__text {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.description-effect__link {
+  display: block;
+
+  /*spadding-bottom: 116px;*/
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+
+  color: #d22856;
+
+}
+
+.description-effect::before {
+  content: "";
+  position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .description-effect__title {
+    width: 175px;
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .description-effect__text {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .description-effect::before {
+    top: -42px;
+    left: 0;
+
+    width: 238px;
+    height: 276px;
+    margin-bottom: 67px;
+
+    background: url("../img/24-tablet.png") no-repeat 50% 50%;
+  }
+
+  .description-effect {
+    display: block;
+
+    padding-left: 310px;
+  }
+
+  .description-effect__link {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description-effect {
+    padding-left: 370px;
+  }
+
+  .description-effect__title {
+    width: 100%;
+
+    margin-bottom: 26px;
+
+    font-size: 30;
+    line-height: 30px;
+  }
+
+  .description-effect__text {
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .description-effect__link {
+    padding-bottom: 116px;
+  }
+
+  .description-effect::before {
+    top: -95px;
+    left: 0;
+
+    width: 305px;
+    height: 355px;
+    margin-bottom: 67px;
+
+    background: url("../img/24-desktop.png") no-repeat 50% 50%;
+  }
+}

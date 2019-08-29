@@ -1,0 +1,105 @@
+.user-name {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user__label {
+  font-size: 14px;
+  line-height: 30px;
+
+  color: #d22856;
+}
+
+.user__label span {
+  padding-left: 25px;
+}
+
+.user__label input {
+  box-sizing: border-box;
+  padding: 17px 22px;
+
+  height: 62px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+.user__label input[placeholder] {
+  color: red;
+}
+
+
+@media (min-width: @mobile-width) {
+  .user-name {
+    margin-bottom: 40px;
+  }
+
+  .user__label input {
+    display: block;
+  }
+
+  .name, .name2, .name3 {
+    width: 280px;
+  }
+
+  .user__label {
+    display: block;
+  }
+
+  .user__item {
+    margin-bottom: 20px;
+  }
+
+  .user__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-name {
+    margin-bottom: 58px;
+  }
+
+  .user__item {
+    margin-bottom: 52px;
+  }
+
+  .user__label input,
+  .user__label span {
+    display: inline-block;
+  }
+
+  .user__label span {
+  padding-left: 0;
+}
+
+  .name2, .name3 {
+    width: 525px;
+  }
+
+  .name {
+    width: 565px;
+  }
+
+  .name, .name2, .name3 {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-name {
+    width: 435px;
+    /*margin-right: 65px;*/
+    margin-bottom: 42px;
+  }
+
+  .name2, .name3 {
+    width: 340px;
+  }
+
+  .name {
+    width: 381px;
+  }
+}

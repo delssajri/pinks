@@ -1,0 +1,49 @@
+.button-item__text {
+  display: block;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.button-item__text sup {
+  color: #d22856;
+}
+
+.ver--desktop {
+  display: none;
+}
+
+@media (min-width: @mobile-width) {
+  .button-item__text {
+    margin-top: 37px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-item__text {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ver--mobile {
+    display: none;
+  }
+
+  .ver--desktop {
+    display: block;
+  }
+}

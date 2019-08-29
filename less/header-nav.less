@@ -1,0 +1,115 @@
+.header-nav {
+  margin: 0 auto;
+
+  opacity: 0.7;
+}
+
+.header-nav-list__wrap {
+  position: relative;
+}
+
+.header-nav-list__toggle {
+  position: absolute;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.header-nav--closed .header-nav-list__toggle {
+  width: 54px;
+  height: 26px;
+
+  background: url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
+}
+
+.header-nav--opened .header-nav-list__toggle {
+  width: 27px;
+  height: 27px;
+
+  background: url("../img/icon-menu-cross.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: @mobile-width) {
+  .header-nav-list__icon--mobile {
+   display: block;
+  }
+  .header-nav-list__icon--tablet,
+  .header-nav-list__icon--desktop {
+    display: none;
+  }
+  .header-nav-list__toggle {
+    right: 0;
+    top: 15px;
+  }
+  .header-nav-list__icon--mobile {
+    width: 75px;
+    height: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header-nav-list__icon--tablet {
+   display: block;
+  }
+  .header-nav-list__icon--mobile {
+   display: none;
+  }
+
+  .header-nav-list__toggle {
+    right: 0;
+    top: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-nav-list__icon--tablet {
+    display: none;
+  }
+
+  .header-nav-list__icon--desktop {
+    display: block;
+  }
+
+  .header-nav-list__toggle {
+    display: none;
+  }
+
+  .header-nav-list__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 620px;
+    padding: 40px 0px 40px 0;
+  }
+
+  .header-nav-list {
+    background-color: #1e2833;
+  }
+
+  .header-nav-list__wrap {
+    width: 150px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .header-nav--closed .header-nav-list__menu {
+    display: none;
+  }
+
+  .header-nav--opened .header-nav-list__logo {
+    display: block;
+  }
+
+  .header-nav--opened .header-nav-list {
+    background-color: #283645;
+  }
+  .header-nav--closed .header-nav-list {
+     background-color: #1e2833;
+  }
+
+  .header-nav--closed .header-nav-list__item--ind {
+    border-bottom: none;
+  }
+}
